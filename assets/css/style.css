@@ -1592,7 +1592,9 @@ textarea.input-field {
 
 .work__card:hover {
   transform: scale(1.01); /* scale up by 10% on hover */
-  box-shadow:  0px 0px 30px var(--color-primary)
+  filter: saturate(1.5); /* or any other filter you want to apply */
+  transition: filter 0.3s ease-in-out; /* add a smooth transition */
+  
 }
 
 .work__img {
@@ -1600,6 +1602,8 @@ textarea.input-field {
   margin-bottom: 0.75rem;
   
 }
+
+
 
 .work__title {
   font-size: var(--normal-font-size);
