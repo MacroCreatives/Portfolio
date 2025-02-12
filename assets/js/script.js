@@ -181,4 +181,3 @@ sr.reveal(`.work__card`, {
 
 
 
-/* Download CV */

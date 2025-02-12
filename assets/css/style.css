@@ -1755,11 +1755,93 @@ img {
   /*========== Font weight ==========*/
   --font-medium: 500;
   --font-semibold: 600;
-
-  
-
-  
 }
+  
+/**
+ * Watch This video first
+ */
+
+ .video-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.video-center {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 20px var(--color-secondary);
+}
+
+
+
+.arrows {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.arrow-down {
+  position: relative;
+  width: 20px;
+  height: 50px;
+  margin: 0 20px;
+  animation: bounce 1s infinite;
+}
+
+.arrow-down:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.arrow-down:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.arrow-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 40px;
+  background-color: var(--raw-seinna);
+}
+
+.arrow-tip {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color:var(--raw-seinna) transparent transparent transparent;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+  
+
 
 /**
  * END OF PORTFOLIO
